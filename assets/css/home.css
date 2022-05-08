@@ -11,6 +11,7 @@ body {
   position: relative;
   background-color: white;
   height: 2000px;
+  color: #5a5a5a;
 }
 
 ::after,
@@ -49,6 +50,14 @@ a {
 .button1:hover {
   background-color: #dc4f72;
   color: #fff;
+}
+.title p {
+
+}
+.title h3 {
+  color: #2C3038;
+  font-size: 50px;
+  font-weight: 700px;
 }
 /* header */
 .header {
@@ -182,4 +191,8 @@ a {
     margin-top: 90px;
     background-color: #F7F9FC;
     padding: 15px 20px;
+}
+/* carousel */
+.carousel {
+  margin-top: 90px;
 }
