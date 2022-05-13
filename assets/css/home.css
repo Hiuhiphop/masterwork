@@ -750,14 +750,13 @@ body {
   width: calc(100% / 3);
   margin-bottom: -3px;
   border: none;
-  color: #4E5B61;
+  color: #4e5b61;
   font-weight: 700;
   font-size: 22px;
 }
 .projects .items .nav-tabs .active {
   border-bottom: 3px solid #dc4f72;
   color: #dc4f72;
-
 }
 .projects .items .tab-content .tab-left,
 .projects .items .tab-content .tab-right {
@@ -765,7 +764,6 @@ body {
 }
 .projects .items .tab-pane {
   margin-top: 50px;
-  
 }
 .projects .items .tab-pane img {
   transition: 0.3s ease;
@@ -786,4 +784,108 @@ body {
   -moz-transform: translateY(-10px);
   -ms-transform: translateY(-10px);
   -o-transform: translateY(-10px);
+}
+
+/* testiminal */
+.testimonial {
+  padding: 100px 0;
+  background-size: cover;
+  background-image: linear-gradient(
+      to right,
+      rgba(247, 249, 252, 0.77),
+      rgba(247, 249, 252, 0.77)
+    ),
+    url(../img/b2.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.testimonial .content p {
+  margin: 0 250px;
+}
+.testimonial .items {
+  margin-top: 50px;
+}
+.testimonial .testimonial-items {
+  background-color: #fff;
+  padding: 30px;
+  margin: auto;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.125);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.testimonial-left {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border: 3px solid #dc4f72;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+.testimonial-left img {
+  width: 100%;
+  min-height: 100%;
+  background-position: top;
+}
+.testimonial-right {
+  width: 80%;
+  padding-left: 50px;
+  position: relative;
+  color: #2c3038;
+}
+.testimonial-right .fa {
+  font-size: 40px;
+  color: #5a5a5a;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.testimonial-right .messasge p {
+  color: #2c3038;
+  font-size: 18px;
+}
+.testimonial-right .name h4 {
+  color: #dc4f72;
+  font-size: 18px;
+  margin-top: 30px;
+}
+.testimonial-right .name p {
+  font-size: 13px;
+}
+.testimonial .owl-carousel .owl-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.testimonial .owl-carousel .owl-dot {
+  height: 5px;
+  width: 50px;
+  margin: 0 5px;
+  background-color: #fff;
+}
+.testimonial .owl-carousel .owl-dots .active {
+  background-color: #dc4f72;
+}
+
+/* ready */
+.ready {
+  margin: 100px 0;
+}
+.ready .title h3 {
+  margin: 0 200px;
+}
+.ready .content p {
+  margin: 40px 250px;
+}
+.ready .items button {
+  margin: 0 10px;
 }
