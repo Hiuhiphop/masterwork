@@ -889,3 +889,75 @@ body {
 .ready .items button {
   margin: 0 10px;
 }
+
+/* footer */
+.footer {
+  margin-top: 100px;
+  padding-top: 50px;
+  background-color: #f7f9fc;
+}
+.footer .items {
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.footer .footer-items:last-child {
+  width: 45%;
+}
+.footer .footer-items h3 {
+  color: #2c3038;
+}
+.footer .footer-items a {
+  color: #5a5a5a;
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 15px;
+}
+.footer .footer-items a:hover {
+  color: #dc4f72;
+}
+.footer .footer-items .footer-form {
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.125);
+  padding: 30px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.footer .footer-items .footer-form p {
+  font-size: 18px;
+  line-height: 25px;
+  color: #2c3038;
+  margin-bottom: 30px;
+  font-weight: 500
+}
+.footer .footer-items .footer-form input {
+  width: 82%;
+  border: none;
+  background-color: #f7f9fc;
+  padding: 0 14px;
+  font-weight: 700;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.footer .copyright {
+  height: 74px;
+}
+.footer .copyright .content a {
+  color: #2c3038;
+}
+
+.footer .copyright .icon i {
+  margin: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #2c3038;
+}
+.footer .copyright .content a:hover,
+.footer .copyright .icon i:hover {
+  color: #dc4f72;
+}
