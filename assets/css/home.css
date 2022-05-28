@@ -161,7 +161,7 @@ body {
   left: 0;
   right: 0;
   background-color: #fff;
-  padding: 0 15px;
+  padding: 10px 0;
   transition: all 0.4s ease 0s;
   box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
   z-index: 100000;
@@ -175,7 +175,7 @@ body {
 }
 .sticky {
   transition: all 0.5s;
-  
+  padding: 5px 0;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
