@@ -386,6 +386,10 @@
 }
 /* phone */
 @media screen and (max-width: 576px) {
+  .container {
+    overflow: hidden;
+    padding: 0 15px;
+  }
   .title h3 {
     font-size: 35px;
   }
@@ -399,10 +403,10 @@
   }
   /* header */
   .header {
-    padding: 15px 0;
+    padding: 8px 0;
   }
   .sticky {
-    padding: 10px 0;
+    padding: 3px 0;
   }
   .header .nav-item .dropdown-menu::before {
     top: 36px;
