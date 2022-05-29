@@ -212,6 +212,7 @@ body {
   height: 2px;
   bottom: 0px;
   left: 8px;
+  top: 30px;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
@@ -221,7 +222,8 @@ body {
   left: 16px;
 }
 .header .navbar .nav-link:hover,
-.header .navbar .dropdown-item:hover {
+.header .navbar .dropdown-item:hover,
+.header .navbar .nav-link:hover .fa {
   color: #dc4f72;
 }
 .header .navbar .nav-link:hover::before,
@@ -248,6 +250,9 @@ body {
   top: -7px;
   left: 49%;
   z-index: 1001;
+}
+.header .nav-link .fa {
+  font-size: 14px;
 }
 
 /* links */
@@ -401,6 +406,7 @@ body {
   -o-transition: all 0.3s ease-in-out;
 }
 .about .about-statistic .statisctic-items {
+  background-color: #fff;
   width: 30%;
   transition: all 0.4 ease;
   -webkit-transition: all 0.4 ease;
@@ -516,6 +522,9 @@ body {
   padding: 12px;
   background-color: #dc4f72;
 }
+.solutions .card .date span {
+  font-size: 18px;
+}
 .solutions .card-body label {
   padding: 5px 10px;
   font-size: 14px;
@@ -542,6 +551,11 @@ body {
 }
 .faq .faq-left {
   width: 40%;
+  position: relative;
+}
+.faq .faq-image {
+  position: sticky;
+  top: 90px;
 }
 .faq .faq-left img {
   width: 100%;

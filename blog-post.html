@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
 
     <link rel="stylesheet" href="./assets/css/blog-post.css" />
+    <link rel="stylesheet" href="./assets/css/responsive-blog-post.css" />
     <link rel="icon" href="./assets/img/handshake-solid.svg" />
     <title>Masterwork</title>
   </head>
@@ -44,45 +45,69 @@
     <!-- header -->
     <header id="header-home" class="header">
       <div class="container">
-        <nav class="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
           <div class="logo">
-            <a href="home.html">
+            <a class="navbar-brand" href="home.html">
               <i class="fa-regular fa-handshake"></i>
               <span>Masterwork</span>
             </a>
           </div>
-          <div class="menu">
-            <ul class="menu-list">
-              <li class="menu-items">
-                <a href="index.html">Home</a>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center justify-content-end w100"
+            >
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
               </li>
-              <li class="menu-items">
-                <a href="about.html">About</a>
+              <li class="nav-item">
+                <a class="nav-link" href="about-html">About</a>
               </li>
-              <li class="menu-items">
-                <a href="services.html">Services</a>
+              <li class="nav-item">
+                <a class="nav-link" href="service-html">Services</a>
               </li>
-              <li class="menu-items drop-menu">
-                <a class="drop-links">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-color1"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Pages
-                  <i class="fa fa-angle-down"></i>
+                  <i class="fa fa-angle-down text-color1"></i>
                 </a>
-                <div class="drop-menu-show">
-                  <ul>
-                    <li class="drop-menu-items">
-                      <a href="blog-post.html">Blog post</a>
-                    </li>
-                    <li class="drop-menu-items">
-                      <a href="blog-single.html">Blog single</a>
-                    </li>
-                  </ul>
-                </div>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="blog-post.html">Blog Post</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="blog-single-html"
+                      >Blog Single</a
+                    >
+                  </li>
+                </ul>
               </li>
-              <li class="menu-items">
-                <a href="contact.html">Contact</a>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
+              <button class="button1">schedule a demo</button>
             </ul>
-            <button class="button1">schedule a demo</button>
           </div>
         </nav>
       </div>
@@ -143,7 +168,9 @@
                         >Programming</span
                       >
                       <h3 class="fw-bold my-3 text-title">
-                        The Best Choice For Your Successful Business!
+                        <a href="blog-single">
+                          The Best Choice For Your Successful Business!
+                        </a>
                       </h3>
                       <p class="mb-5">
                         Lorem ipsum dolor sit, icing elit. Nemo veritatis omnis
@@ -151,7 +178,7 @@
                         aliquid vero, illum quis maxime ducimus voluptate
                         laborum tenetur, unde ea enim.
                       </p>
-                      <a href="blog-single"
+                      <a class="button-more" href="blog-single"
                         >Read more
                         <i class="fa fa-arrow-right"></i>
                       </a>
@@ -175,7 +202,9 @@
                         >Industry</span
                       >
                       <h3 class="fw-bold my-3 text-title">
-                        The Best Choice For Your Successful Business!
+                        <a href="blog-single">
+                          The Best Choice For Your Successful Business!
+                        </a>
                       </h3>
                       <p class="mb-5">
                         Lorem ipsum dolor sit, icing elit. Nemo veritatis omnis
@@ -183,7 +212,7 @@
                         aliquid vero, illum quis maxime ducimus voluptate
                         laborum tenetur, unde ea enim.
                       </p>
-                      <a href="blog-single"
+                      <a class="button-more" href="blog-single"
                         >Read more
                         <i class="fa fa-arrow-right"></i>
                       </a>
@@ -207,7 +236,9 @@
                         >Design</span
                       >
                       <h3 class="fw-bold my-3 text-title">
-                        The Best Choice For Your Successful Business!
+                        <a href="blog-single"
+                          >The Best Choice For Your Successful Business!</a
+                        >
                       </h3>
                       <p class="mb-5">
                         Lorem ipsum dolor sit, icing elit. Nemo veritatis omnis
@@ -215,7 +246,7 @@
                         aliquid vero, illum quis maxime ducimus voluptate
                         laborum tenetur, unde ea enim.
                       </p>
-                      <a href="blog-single"
+                      <a class="button-more" href="blog-single"
                         >Read more
                         <i class="fa fa-arrow-right"></i>
                       </a>
@@ -255,15 +286,15 @@
     <!-- list-card -->
     <section class="blog-card">
       <div class="container">
-        <div class="card-wrap row">
-          <div class="blog-card-items col-lg-4 col-md-6 mt-5">
+        <div class="card-wrap d-flex justify-content-between flex-wrap">
+          <div class="blog-card-items">
             <a href="singe-post">
               <div class="card">
                 <img src="./assets/img/b1.jpg" class="card-img-top" alt="..." />
                 <div class="date">
                   <span class="text-light fw-bold fs-5">26 Jan, 2020</span>
                 </div>
-    
+
                 <div class="card-body mx-2">
                   <label class="text-color1 bg-color1 fw-bold my-3"
                     >Business</label
@@ -272,8 +303,8 @@
                     Corporate, Business & Digital Agencye
                   </h5>
                   <p class="card-text py-3">
-                    Some quick example text to build on the card title and make up
-                    the bulk of the card's content.
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
                   </p>
                   <a
                     href="#"
@@ -285,23 +316,25 @@
               </div>
             </a>
           </div>
-  
-          <div class="blog-card-items col-lg-4 col-md-6 mt-5">
+
+          <div class="blog-card-items">
             <a href="singe-post">
               <div class="card">
                 <img src="./assets/img/b2.jpg" class="card-img-top" alt="..." />
                 <div class="date">
                   <span class="text-light fw-bold fs-5">15 Apr, 2020</span>
                 </div>
-    
+
                 <div class="card-body mx-2">
-                  <label class="text-color2 bg-color2 fw-bold my-3">Design</label>
+                  <label class="text-color2 bg-color2 fw-bold my-3"
+                    >Design</label
+                  >
                   <h5 class="card-title fw-bold">
                     Corporate, Business & Digital Agencye
                   </h5>
                   <p class="card-text py-3">
-                    Some quick example text to build on the card title and make up
-                    the bulk of the card's content.
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
                   </p>
                   <a
                     href="#"
@@ -313,23 +346,25 @@
               </div>
             </a>
           </div>
-  
-          <div class="blog-card-items col-lg-4 col-md-6 mt-5">
+
+          <div class="blog-card-items">
             <a href="singe-post">
               <div class="card">
                 <img src="./assets/img/b3.jpg" class="card-img-top" alt="..." />
                 <div class="date">
                   <span class="text-light fw-bold fs-5">15 Apr, 2020</span>
                 </div>
-    
+
                 <div class="card-body mx-2">
-                  <label class="text-color3 bg-color3 fw-bold my-3">Industry</label>
+                  <label class="text-color3 bg-color3 fw-bold my-3"
+                    >Industry</label
+                  >
                   <h5 class="card-title fw-bold">
                     Corporate, Business & Digital Agencye
                   </h5>
                   <p class="card-text py-3">
-                    Some quick example text to build on the card title and make up
-                    the bulk of the card's content.
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
                   </p>
                   <a
                     href="#"
@@ -341,23 +376,25 @@
               </div>
             </a>
           </div>
-  
-          <div class="blog-card-items col-lg-4 col-md-6 mt-5">
+
+          <div class="blog-card-items">
             <a href="singe-post">
               <div class="card">
                 <img src="./assets/img/b4.jpg" class="card-img-top" alt="..." />
                 <div class="date">
                   <span class="text-light fw-bold fs-5">15 Apr, 2020</span>
                 </div>
-    
+
                 <div class="card-body mx-2">
-                  <label class="text-color1 bg-color1 fw-bold my-3">Business</label>
+                  <label class="text-color1 bg-color1 fw-bold my-3"
+                    >Business</label
+                  >
                   <h5 class="card-title fw-bold">
                     Corporate, Business & Digital Agencye
                   </h5>
                   <p class="card-text py-3">
-                    Some quick example text to build on the card title and make up
-                    the bulk of the card's content.
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
                   </p>
                   <a
                     href="#"
@@ -369,23 +406,25 @@
               </div>
             </a>
           </div>
-  
-          <div class="blog-card-items col-lg-4 col-md-6 mt-5">
+
+          <div class="blog-card-items">
             <a href="singe-post">
               <div class="card">
                 <img src="./assets/img/b7.jpg" class="card-img-top" alt="..." />
                 <div class="date">
                   <span class="text-light fw-bold fs-5">15 Apr, 2020</span>
                 </div>
-    
+
                 <div class="card-body mx-2">
-                  <label class="text-color2 bg-color2 fw-bold my-3">Design</label>
+                  <label class="text-color2 bg-color2 fw-bold my-3"
+                    >Design</label
+                  >
                   <h5 class="card-title fw-bold">
                     Corporate, Business & Digital Agencye
                   </h5>
                   <p class="card-text py-3">
-                    Some quick example text to build on the card title and make up
-                    the bulk of the card's content.
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
                   </p>
                   <a
                     href="#"
@@ -397,23 +436,25 @@
               </div>
             </a>
           </div>
-  
-          <div class="blog-card-items col-lg-4 col-md-6 mt-5">
+
+          <div class="blog-card-items">
             <a href="singe-post">
               <div class="card">
                 <img src="./assets/img/b8.jpg" class="card-img-top" alt="..." />
                 <div class="date">
                   <span class="text-light fw-bold fs-5">15 Apr, 2020</span>
                 </div>
-    
+
                 <div class="card-body mx-2">
-                  <label class="text-color3 bg-color3 fw-bold my-3">Industry</label>
+                  <label class="text-color3 bg-color3 fw-bold my-3"
+                    >Industry</label
+                  >
                   <h5 class="card-title fw-bold">
                     Corporate, Business & Digital Agencye
                   </h5>
                   <p class="card-text py-3">
-                    Some quick example text to build on the card title and make up
-                    the bulk of the card's content.
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
                   </p>
                   <a
                     href="#"
@@ -428,12 +469,24 @@
         </div>
 
         <div class="pagination-wrap mt-5">
-          <ul class="pagination justify-content-center ">
-            <li class="page-item"><a class="page-link" href="#"><< Previous</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <a class="page-link" href="#">
+                <i class="fa fa-angle-double-left"></i>
+                Previous</a
+              >
+            </li>
+            <li class="page-item">
+              <a class="page-link active" href="#">1</a>
+            </li>
             <li class="page-item"><a class="page-link" href="#">2</a></li>
             <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next >></a></li>
+            <li class="page-item">
+              <a class="page-link" href="#"
+                >Next
+                <i class="fa fa-angle-double-right"></i>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
