@@ -544,16 +544,9 @@
     width: 100%;
   }
 
-
-  /* map */
-  .map iframe {
-    height: 400px;
-  }
-
   /* footer */
   .footer .items {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
   .footer .footer-items {
     margin-bottom: 40px;
