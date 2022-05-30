@@ -1,4 +1,4 @@
-/* large tablet */ 
+/* large tablet */
 @media screen and (max-width: 991px) {
   .title h3 {
     font-size: 35px;
@@ -118,7 +118,7 @@
     margin-top: 80px;
   }
 
-  /* carousel */ 
+  /* carousel */
   .carousel .carousel-items {
     flex-direction: column;
     margin-bottom: 50px;
@@ -131,6 +131,9 @@
   }
 
   /* help */
+  .help {
+    padding-top: 30px;
+  }
   .help .title {
     padding: 0 !important;
   }
@@ -146,7 +149,7 @@
   .map iframe {
     height: 400px;
   }
-  
+
   /* footer */
   .footer .items {
     flex-direction: row;
@@ -304,7 +307,7 @@
     margin-top: 80px;
   }
 
-  /* carousel */ 
+  /* carousel */
   .carousel .carousel-items {
     flex-direction: column;
     margin-bottom: 50px;
@@ -317,6 +320,9 @@
   }
 
   /* help */
+  .help {
+    padding-top: 30px;
+  }
   .help .title {
     padding: 0 !important;
   }
@@ -494,7 +500,7 @@
     margin-top: 70px;
   }
 
-  /* carousel */ 
+  /* carousel */
   .carousel .carousel-items {
     flex-direction: column;
     margin-bottom: 50px;
