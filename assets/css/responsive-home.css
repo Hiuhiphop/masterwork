@@ -1,4 +1,4 @@
-/* large tablet */ 
+/* large tablet */
 @media screen and (max-width: 992px) {
   .title h3 {
     font-size: 35px;
@@ -290,6 +290,7 @@
     width: 50px;
     height: 50px;
     opacity: 0.8;
+    z-index: 1000000;
   }
   .bck .fa-arrow-up {
     line-height: 50px;
@@ -587,6 +588,7 @@
     width: 50px;
     height: 50px;
     opacity: 0.8;
+    z-index: 1000000;
   }
   .bck .fa-arrow-up {
     line-height: 50px;
@@ -901,6 +903,7 @@
     width: 50px;
     height: 50px;
     opacity: 0.8;
+    z-index: 10000000;
   }
   .bck .fa-arrow-up {
     line-height: 50px;
