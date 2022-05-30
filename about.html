@@ -9,6 +9,13 @@
       href="//fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <!-- boostrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
     <!-- font awsome -->
     <link
       rel="stylesheet"
@@ -29,7 +36,7 @@
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
     <!-- Magnific Popup jQuery plugin -->
-    <link rel="stylesheet" href="./assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="./assets/css/magnific-popup.css" />
     <!-- css -->
     <link rel="stylesheet" href="./assets/css/jquery.back-to-top.css" />
     <link rel="stylesheet" href="./assets/css/about.css" />
@@ -38,77 +45,70 @@
   <body>
     <!-- header -->
     <header id="header-home" class="header">
-      <div class="container" id="container__header">
-        <nav class="nav-bar">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
           <div class="logo">
-            <a href="home.html">
+            <a class="navbar-brand" href="index.html">
               <i class="fa-regular fa-handshake"></i>
               <span>Masterwork</span>
             </a>
-            <span class="menu__icon" onclick="togglemenu()"><i class="fa-solid fa-bars"></i></span> 
           </div>
-          <div class="menu">
-            <ul class="menu-list" id="menuList1">
-              <li class="menu-items">
-                <a href="home.html">Home</a>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center justify-content-end w100"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
               </li>
-              <li class="menu-items menu-list-about">
-                <a href="home.html">About</a>
+              <li class="nav-item">
+                <a class="nav-link text-color1" href="about.html">About</a>
               </li>
-              <li class="menu-items">
-                <a href="home.html">Services</a>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
               </li>
-              <li class="menu-items drop-menu">
-                <a class="drop-links">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Pages
                   <i class="fa fa-angle-down"></i>
                 </a>
-                <div class="drop-menu-show">
-                  <ul>
-                    <li class="drop-menu-items">
-                      <a href="home.html">Blog post</a>
-                    </li>
-                    <li class="drop-menu-items">
-                      <a href="home.html">Blog single</a>
-                    </li>
-                  </ul>
-                </div>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="blog-post.html">Blog Post</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="singlepost.html"
+                      >Blog Single</a
+                    >
+                  </li>
+                </ul>
               </li>
-              <li class="menu-items">
-                <a href="home.html">Contact</a>
-              </li>
-              <button class="button1">schedule a demo</button>
-            </ul>
-          </div>
-          <div class="menu">
-            <ul class="menu-list" id="menuList2">
-              <li class="menu-items">
-                <a href="home.html">Home</a>
-              </li>
-              <li class="menu-items menu-list-about">
-                <a href="home.html">About</a>
-              </li>
-              <li class="menu-items">
-                <a href="home.html">Services</a>
-              </li>
-              <li class="menu-items drop-menu">
-                <a class="drop-links">
-                  Pages
-                  <i class="fa fa-angle-down"></i>
-                </a>
-                <div class="drop-menu-show">
-                  <ul>
-                    <li class="drop-menu-items">
-                      <a href="home.html">Blog post</a>
-                    </li>
-                    <li class="drop-menu-items">
-                      <a href="home.html">Blog single</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="menu-items">
-                <a href="home.html">Contact</a>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
               <button class="button1">schedule a demo</button>
             </ul>
@@ -119,7 +119,7 @@
     <!-- link -->
     <section class="link">
       <div class="container">
-        <a href="home.html">Home</a>
+        <a href="index.html">Home</a>
         »
         <span>About</span>
       </div>
@@ -159,12 +159,12 @@
           </div>
           <div class="img_aboutus">
             <div class="img__out">
-              <img src="/Masterwork-a./img/b5.jpg" alt="b5.jpg" />
+              <img src="/img/b5.jpg" alt="b5.jpg" />
             </div>
           </div>
         </main>
         <footer class="footer__aboutus">
-          <div class="col">
+          <div class="about-items">
             <h3>Our History 1795</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do
@@ -172,7 +172,7 @@
               enim ad minim veniam, quis nostrud.
             </p>
           </div>
-          <div class="col">
+          <div class="about-items">
             <h3>The power of business</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do
@@ -180,7 +180,7 @@
               enim ad minim veniam, quis nostrud.
             </p>
           </div>
-          <div class="col">
+          <div class="about-items">
             <h3>120 Customer service</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do
@@ -207,7 +207,7 @@
         </header>
         <main class="main__features">
           <div class="col__out">
-            <div class="col" id="col__hover">
+            <div class="feature-items" id="col__hover">
               <div class="col__inner">
                 <div class="col__top">
                   <p class="icon__col">
@@ -223,7 +223,7 @@
                 </div>
               </div>
             </div>
-            <div class="col" id="col__hover">
+            <div class="feature-items" id="col__hover">
               <div class="col__inner">
                 <div class="col__top">
                   <p class="icon__col">
@@ -239,7 +239,7 @@
                 </div>
               </div>
             </div>
-            <div class="col" id="col__hover">
+            <div class="feature-items" id="col__hover">
               <div class="col__inner">
                 <div class="col__top">
                   <p class="icon__col">
@@ -255,7 +255,7 @@
                 </div>
               </div>
             </div>
-            <div class="col" id="col__hover">
+            <div class="feature-items" id="col__hover">
               <div class="col__inner">
                 <div class="col__top">
                   <p class="icon__col">
@@ -330,107 +330,139 @@
           </p>
         </header>
         <main>
-          <div class="row">
-            <div class="col">
+          <div class="member-items">
+            <div class="items">
               <div class="item">
                 <img src="./img/team1.jpg" alt="team1.jpg" />
                 <div class="title">
                   <div class="title__in">
                     <a class="name" href="#"><h3>Gwen Johnson</h3></a>
                     <p>Founder & CEO</p>
-                    <a class="icon__facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a class="icon__twitter" href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="icon__facebook" href="#"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                    <a class="icon__twitter" href="#"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="items">
               <div class="item">
                 <img src="./img/team2.jpg" alt="team2.jpg" />
                 <div class="title">
                   <div class="title__in">
                     <a class="name" href="#"><h3>Gwen Johnson</h3></a>
                     <p>Founder & CEO</p>
-                    <a class="icon__facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a class="icon__twitter" href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="icon__facebook" href="#"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                    <a class="icon__twitter" href="#"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="items">
               <div class="item">
                 <img src="./img/team3.jpg" alt="team3.jpg" />
                 <div class="title">
                   <div class="title__in">
                     <a class="name" href="#"><h3>Gwen Johnson</h3></a>
                     <p>Founder & CEO</p>
-                    <a class="icon__facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a class="icon__twitter" href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="icon__facebook" href="#"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                    <a class="icon__twitter" href="#"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="items">
               <div class="item">
                 <img src="./img/team4.jpg" alt="team4.jpg" />
                 <div class="title">
                   <div class="title__in">
                     <a class="name" href="#"><h3>Gwen Johnson</h3></a>
                     <p>Founder & CEO</p>
-                    <a class="icon__facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a class="icon__twitter" href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="icon__facebook" href="#"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                    <a class="icon__twitter" href="#"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="items">
               <div class="item">
                 <img src="./img/team5.jpg" alt="team5.jpg" />
                 <div class="title">
                   <div class="title__in">
                     <a class="name" href="#"><h3>Gwen Johnson</h3></a>
                     <p>Founder & CEO</p>
-                    <a class="icon__facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a class="icon__twitter" href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="icon__facebook" href="#"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                    <a class="icon__twitter" href="#"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="items">
               <div class="item">
                 <img src="./img/team6.jpg" alt="team6.jpg" />
                 <div class="title">
                   <div class="title__in">
                     <a class="name" href="#"><h3>Gwen Johnson</h3></a>
                     <p>Founder & CEO</p>
-                    <a class="icon__facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a class="icon__twitter" href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="icon__facebook" href="#"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                    <a class="icon__twitter" href="#"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="items">
               <div class="item">
                 <img src="./img/team7.jpg" alt="team7.jpg" />
                 <div class="title">
                   <div class="title__in">
                     <a class="name" href="#"><h3>Gwen Johnson</h3></a>
                     <p>Founder & CEO</p>
-                    <a class="icon__facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a class="icon__twitter" href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="icon__facebook" href="#"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                    <a class="icon__twitter" href="#"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="items">
               <div class="item">
                 <img src="./img/team8.jpg" alt="team8.jpg" />
                 <div class="title">
                   <div class="title__in">
                     <a class="name" href="#"><h3>Gwen Johnson</h3></a>
                     <p>Founder & CEO</p>
-                    <a class="icon__facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a class="icon__twitter" href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="icon__facebook" href="#"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                    <a class="icon__twitter" href="#"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
                   </div>
                 </div>
               </div>
@@ -444,7 +476,11 @@
       <div class="container">
         <header>
           <h1>Ready to build your own brand community</h1>
-          <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+          <p>
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+            sodales quis. Integer sit amet mattis quam.
+          </p>
           <button class="button1">Book a Demo</button>
           <button class="button1 button2">Get Started</button>
         </header>
@@ -455,10 +491,10 @@
     <!-- footer -->
     <section class="footer">
       <div class="container">
-        <div class="row">
+        <div class="footer-items">
           <div class="left">
-            <div class="col">
-              <h2>Company</h2>
+            <div class="items">
+              <h2 class="fw-bold">Company</h2>
               <ul>
                 <a href="#">
                   <li>Home</li>
@@ -477,8 +513,8 @@
                 </a>
               </ul>
             </div>
-            <div class="col">
-              <h2>Useful Links</h2>
+            <div class="items">
+              <h2 class="fw-bold">Useful Links</h2>
               <ul>
                 <a href="#">
                   <li>Case Studies</li>
@@ -497,8 +533,8 @@
                 </a>
               </ul>
             </div>
-            <div class="col">
-              <h2>Our Services</h2>
+            <div class="items">
+              <h2 class="fw-bold">Our Services</h2>
               <ul>
                 <a href="#">
                   <li>Privacy Policy</li>
@@ -519,14 +555,23 @@
             </div>
           </div>
           <div class="right">
-            <h2>Newsletter</h2>
+            <h2 class="fw-bold">Newsletter</h2>
             <div class="subscribe">
               <p>Get latest updates and offers.</p>
               <form class="form">
-                <input type="email" name="Email Address" id="input" placeholder="Email Address" required>
+                <input
+                  type="email"
+                  name="Email Address"
+                  id="input"
+                  placeholder="Email Address"
+                  required
+                />
                 <button type="submit">Go</button>
               </form>
-              <p>Sign up for our latest news & articles. We won’t give you spam mails.</p>
+              <p>
+                Sign up for our latest news & articles. We won’t give you spam
+                mails.
+              </p>
             </div>
           </div>
         </div>
@@ -617,44 +662,44 @@
     <!-- Magnific Popup jQuery plugin -->
     <script src="./assets/js/jquery.magnific-popup.min.js"></script>
     <script>
-      $(document).ready(function() {
-          $('.video__play').magnificPopup({
-            type:'iframe',
-            iframe: {
-                markup: '<div class="mfp-iframe-scaler">'+
-                          '<div class="mfp-close"></div>'+
-                          '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
-                        '</div>',
+      $(document).ready(function () {
+        $(".video__play").magnificPopup({
+          type: "iframe",
+          iframe: {
+            markup:
+              '<div class="mfp-iframe-scaler">' +
+              '<div class="mfp-close"></div>' +
+              '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+              "</div>",
 
-                patterns: {
-                  youtube: {
-                    index: 'youtube.com/', 
+            patterns: {
+              youtube: {
+                index: "youtube.com/",
 
-                    id: 'v=', 
+                id: "v=",
 
-                    src: 'http://www.youtube.com/embed/%id%?autoplay=1' //nhớ thêm http: vào chổ này nè
-                  },
-                  vimeo: {
-                    index: 'vimeo.com/',
-                    id: '/',
-                    src: '//player.vimeo.com/video/%id%?autoplay=1'
-                  },
-                  gmaps: {
-                    index: '//maps.google.',
-                    src: '%id%&output=embed'
-                  }
+                src: "http://www.youtube.com/embed/%id%?autoplay=1", //nhớ thêm http: vào chổ này nè
+              },
+              vimeo: {
+                index: "vimeo.com/",
+                id: "/",
+                src: "//player.vimeo.com/video/%id%?autoplay=1",
+              },
+              gmaps: {
+                index: "//maps.google.",
+                src: "%id%&output=embed",
+              },
+            },
 
-                  
-
-                },
-
-                srcAction: 'iframe_src', 
-              }
+            srcAction: "iframe_src",
+          },
         });
       });
     </script>
-    
-    <script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- <script>
       var menuList = document.getElementById("menuList1");
       menuList.style.maxHeight = "0px";
       menuList.style.opacity = "0";
@@ -673,8 +718,6 @@
 
           }
       }
-    </script>
-
-
+    </script> -->
   </body>
 </html>
