@@ -763,6 +763,9 @@ body {
 .projects .items .tab-pane {
   margin-top: 50px;
 }
+.projects .items .tab-pane h4 {
+  color: #2c3038;
+}
 .projects .items .tab-pane img {
   transition: 0.3s ease;
   width: 100%;

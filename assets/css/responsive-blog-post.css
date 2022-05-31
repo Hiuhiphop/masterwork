@@ -1,5 +1,8 @@
 /* large tablet */
 @media screen and (max-width: 991px) {
+  ::before {
+    content: none;
+  }
   .title h3 {
     font-size: 35px;
   }
@@ -193,6 +196,9 @@
 }
 /* tablet & wide phone */
 @media screen and (max-width: 768px) {
+  ::before {
+    content: none;
+  }
   .title h3 {
     font-size: 35px;
   }
@@ -386,6 +392,9 @@
 }
 /* phone */
 @media screen and (max-width: 576px) {
+  ::before {
+    content: none;
+  }
   .container {
     overflow: hidden;
     padding: 0 15px;
